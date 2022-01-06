@@ -62,7 +62,7 @@ class ContaPoupanca extends ContaBancaria{
 }
 
 //Crie uma classe-filha chamada ContaUniversitaria que herda todos os parâmetros de ContaBancaria;
-class ContaUniversitária extends ContaBancaria{
+class ContaUniversitaria extends ContaBancaria{
   constructor(agencia,numero){
     super(agencia, numero);
     this.tipo = 'universitária';
@@ -74,3 +74,11 @@ class ContaUniversitária extends ContaBancaria{
     }
   }
 }
+
+/*
+no console do google:
+const minhaConta = new ContaCorrente(1, 234, true)
+minhaConta.saldo
+minhaConta.depositar(1000)
+minhaConta.sacar(2000)
+*/
