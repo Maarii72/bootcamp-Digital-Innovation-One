@@ -12,4 +12,4 @@ Este repositório contém a atividade prática do Curso "Manipulando o DOM", que
 
 ## Exemplo
 
-![Exercício Dark Mode e Light Mode](./dark-mode-exercicio.gif)
+![Exercício Dark Mode e Light Mode](https://github.com/stebsnusch/basecamp-javascript/blob/main/DOM/dark-mode-exercicio.gif)
