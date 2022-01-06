@@ -1,12 +1,12 @@
 class ContaBancaria{
-  constructor(agencia, numero, tipo, saldo){
+  constructor(agencia, numero, tipo){
     //this se refere ao objeto contaBancaria
     this.agencia = agencia;
     this.numero = numero;
     this.tipo = tipo;
     // adiciona sempre o _ na frente quando tiver getter ou setter 
     //para função ter o nome saldo mas a propriedade não
-    this._saldo = saldo;
+    this._saldo = 0;
   }
 
   get saldo(){
@@ -35,9 +35,9 @@ class ContaBancaria{
 
 //Crie uma classe-filha chamada ContaCorrente que herda 
 //todos esses parâmetros e ainda possua o parâmetro cartaoCredito;
-class ContaCorrente{
-  constructor(agencia,numero,saldo,cartaoCredito){
-    super(agencia, numero, saldo);
+class ContaCorrente extends ContaBancaria{
+  constructor(agencia,numero,cartaoCredito){
+    super(agencia, numero);
     this.tipo = 'corrente';
     this._cartaoCredito = cartaoCredito;
   }
@@ -54,17 +54,17 @@ class ContaCorrente{
 }
 
 //crie uma classe-filha chamada ContaPoupanca que herda todos os parâmetros de ContaBancaria;
-class ContaPoupanca{
-  constructor(agencia,numero,saldo){
-    super(agencia, numero, saldo);
+class ContaPoupanca extends ContaBancaria{
+  constructor(agencia,numero){
+    super(agencia, numero);
     this.tipo = 'poupança';
   }
 }
 
 //Crie uma classe-filha chamada ContaUniversitaria que herda todos os parâmetros de ContaBancaria;
-class ContaUniversitária{
-  constructor(agencia,numero,saldo){
-    super(agencia, numero, saldo);
+class ContaUniversitária extends ContaBancaria{
+  constructor(agencia,numero){
+    super(agencia, numero);
     this.tipo = 'universitária';
   }
   //Faça com que o método saque de ContaUniversitaria apenas seja capaz de sacar valores menores que 500 reais.
