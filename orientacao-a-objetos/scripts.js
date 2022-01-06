@@ -68,4 +68,9 @@ class ContaUniversitária{
     this.tipo = 'universitária';
   }
   //Faça com que o método saque de ContaUniversitaria apenas seja capaz de sacar valores menores que 500 reais.
+  sacar(valor){
+    if(valor>500){
+      return 'Operação negada!';
+    }
+  }
 }
