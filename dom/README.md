@@ -1,15 +1,15 @@
-# Map, Filter e Reduce
+# Manipulando o DOM
 
-Este repositório contém a atividade prática do Curso "Map, Filter e Reduce", que faz parte do Basecamp de Javascript. Aula ministrada por [@stebsnusch](https://github.com/stebsnusch) pela [Digital Innovation One](https://digitalinnovation.one/).
+Este repositório contém a atividade prática do Curso "Manipulando o DOM", que faz parte do Basecamp de Javascript. Aula ministrada por [@stebsnusch](https://github.com/stebsnusch) pela [Digital Innovation One](https://digitalinnovation.one/).
 
-## Atividades
+## Atividade: Light Mode/Dark Mode
 
-### Map
-- Pratique a sintaxe de multiplicação de números, uma vez utilizando o parâmetro `this` de um objeto criado por você, e depois sem ele.
+1. Crie uma estrutura básica de projeto front-end (HTML, CSS e JS)
+2. Copie o HTML e o CSS deste repositório
+3. Crie um arquivo chamado `scripts.js` na sua pasta `assets/js`
+4. Selecione os elementos: `h1`, `button`, `footer` e `body`
+5. Se os elementos possuirem a classe `dark-mode`, modifique seus estilos. Caso contrário, volte os estilos para o original
 
-### Filter
-- Filtre e retorne todos os números pares de um array.
+## Exemplo
 
-### Reduce
-1. Some todos os números de um array
-2. Crie uma função que recebe uma lista de preços e um número representando o saldo disponível. Calcule qual será o saldo final após subtrair todos os preços da lista enviada.
+![Exercício Dark Mode e Light Mode](./dark-mode-exercicio.gif)
